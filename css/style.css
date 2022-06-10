@@ -1,0 +1,266 @@
+body {
+  background-color: antiquewhite;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin: 0px;
+}
+
+p {
+  font-family: "Varela Round", sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  grid-area: header;
+}
+
+.headerPaginas {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.headerIndex {
+  background-image: url(../assets/imagenes/argenplas1.jpg);
+  height: 250px;
+}
+
+.tituloPrincipal {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  color: rgb(220, 247, 220);
+}
+
+.containerUno {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "nav" "h2" "parrafo" "beneficiosUno" "beneficiosDos" "gente" "cartasTipoCliente" "footer";
+}
+
+.nav {
+  grid-area: nav;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.colorNav {
+  background-color: rgba(101, 231, 231, 0.555);
+}
+
+.estiloLiNav {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+}
+
+.h2 {
+  grid-area: h2;
+  padding: 3%;
+  margin: 0px;
+}
+
+.parrafo {
+  grid-area: parrafo;
+  padding: 3%;
+  font-size: 25px;
+}
+
+.gente {
+  grid-area: gente;
+  padding: 5%;
+}
+
+.imagenCompras {
+  width: 300px;
+  height: 250px;
+}
+
+.beneficiosUno {
+  grid-area: beneficiosUno;
+  padding: 2%;
+}
+
+.beneficiosDos {
+  grid-area: beneficiosDos;
+  padding: 2%;
+}
+
+.cartasTipoCliente {
+  grid-area: cartasTipoCliente;
+  padding: 5%;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  width: 50px;
+}
+
+.imagenDeCard {
+  margin: 5px 0px;
+}
+
+.footer {
+  grid-area: footer;
+  font-size: 20px;
+  background-color: rgb(231, 59, 59);
+}
+
+.divsDelFooter {
+  margin: 1% 2%;
+}
+
+.navDeProductos {
+  grid-area: navDeProductos;
+}
+
+.containerTres {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "nav" "h2" "parrafo" "navDeProductos" "footer";
+}
+
+.imgCardProductos {
+  width: 100%;
+}
+
+.paddingCardProductos {
+  padding: 2%;
+}
+
+.botonesAnimados:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.navDeProductos {
+  grid-area: navDeProductos;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: antiquewhite;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.containerDos {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "nav" "parrafo" "video" "footer";
+}
+.containerDos .header {
+  grid-area: header;
+  display: block;
+}
+.containerDos .header .headerPaginas {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.nav {
+  grid-area: nav;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  list-style: none;
+  background-color: rgba(101, 231, 231, 0.555);
+}
+.nav li {
+  display: list-item;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+}
+.nav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+}
+.nav li a:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.parrafo {
+  grid-area: parrafo;
+  padding: 3%;
+  font-size: 25px;
+  text-align: center;
+}
+.parrafo p {
+  font-family: "Varela Round", sans-serif;
+  margin: 0px;
+  display: block;
+}
+
+.videosCables {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videosCables iframe {
+  margin: 2%;
+  border: 0;
+  width: 560px;
+  height: 315px;
+}
+
+.footer {
+  grid-area: footer;
+  font-size: 20px;
+  background-color: rgb(231, 59, 59);
+  display: flex;
+}
+.footer footer {
+  display: flex;
+}
+.footer footer .divsDelFooter {
+  margin: 1% 2%;
+  text-align: left;
+  display: block;
+}
+.footer footer .divsDelFooter p {
+  font-family: "Varela Round", sans-serif;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
