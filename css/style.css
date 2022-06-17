@@ -1,155 +1,180 @@
+/*del mixin*/
+.videosCables, .nav, .containerDos .header .headerPaginas {
+  display: flex;
+  align-items: center;
+}
+
+/*
 body {
-  background-color: antiquewhite;
+    background-color: antiquewhite;
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 0px;
 }
 
 p {
-  font-family: "Varela Round", sans-serif;
-  margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.header {
-  grid-area: header;
+.header{
+    grid-area: header;
 }
 
 .headerPaginas {
-  font-family: "Oswald", sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 30px;
-  text-align: center;
-  color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 
+
 .headerIndex {
-  background-image: url(../assets/imagenes/argenplas1.jpg);
-  height: 250px;
+    background-image: url(../assets/imagenes/argenplas1.jpg);
+    height: 250px;
 }
 
 .tituloPrincipal {
-  font-family: "Oswald", sans-serif;
-  font-size: 75px;
-  color: rgb(220, 247, 220);
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    color: rgb(220, 247, 220);
 }
 
-.containerUno {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "nav" "h2" "parrafo" "beneficiosUno" "beneficiosDos" "gente" "cartasTipoCliente" "footer";
+
+.containerUno{ 
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "h2"
+        "parrafo"
+        "beneficiosUno"
+        "beneficiosDos"
+        "gente"
+        "cartasTipoCliente"
+        "footer";
 }
 
 .nav {
-  grid-area: nav;
-  padding: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    grid-area: nav;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 .colorNav {
-  background-color: rgba(101, 231, 231, 0.555);
+    background-color: rgba(101, 231, 231, 0.555);
 }
 
 .estiloLiNav {
-  font-family: "Varela Round", sans-serif;
-  font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
 }
 
 .h2 {
-  grid-area: h2;
-  padding: 3%;
-  margin: 0px;
+    grid-area: h2;
+    padding: 3%;
+    margin: 0px;
 }
 
 .parrafo {
-  grid-area: parrafo;
-  padding: 3%;
-  font-size: 25px;
+    grid-area: parrafo;
+    padding: 3%;
+    font-size: 25px;
 }
 
 .gente {
-  grid-area: gente;
-  padding: 5%;
+    grid-area: gente;
+    padding: 5%;
 }
 
 .imagenCompras {
-  width: 300px;
-  height: 250px;
+    width: 300px;
+    height: 250px;
 }
 
 .beneficiosUno {
-  grid-area: beneficiosUno;
-  padding: 2%;
+    grid-area: beneficiosUno;
+    padding: 2%;
 }
 
 .beneficiosDos {
-  grid-area: beneficiosDos;
-  padding: 2%;
+    grid-area: beneficiosDos;
+    padding: 2%;
 }
-
 .cartasTipoCliente {
-  grid-area: cartasTipoCliente;
-  padding: 5%;
+    grid-area: cartasTipoCliente;
+    padding: 5%;
 }
 
 .card-img, .card-img-bottom, .card-img-top {
-  width: 50px;
+    width: 50px;
 }
 
 .imagenDeCard {
-  margin: 5px 0px;
+    margin: 5px 0px;
 }
 
 .footer {
-  grid-area: footer;
-  font-size: 20px;
-  background-color: rgb(231, 59, 59);
+    grid-area: footer;
+    font-size: 20px;
+    background-color: rgb(231, 59, 59);
 }
 
 .divsDelFooter {
-  margin: 1% 2%;
+    margin: 1% 2%;
 }
 
 .navDeProductos {
-  grid-area: navDeProductos;
+    grid-area: navDeProductos;
 }
 
+
 .containerTres {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "nav" "h2" "parrafo" "navDeProductos" "footer";
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "h2"
+    "parrafo"
+    "navDeProductos"
+    "footer";
 }
 
 .imgCardProductos {
-  width: 100%;
+    width: 100%;
 }
 
 .paddingCardProductos {
-  padding: 2%;
+    padding: 2%;
 }
 
-.botonesAnimados:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
+.botonesAnimados:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 .navDeProductos {
-  grid-area: navDeProductos;
+    grid-area: navDeProductos;
 }
-
+*/
 * {
   margin: 0%;
   padding: 0%;
@@ -184,10 +209,8 @@ ul {
 }
 .containerDos .header .headerPaginas {
   font-family: "Oswald", sans-serif;
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
   font-size: 30px;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -196,8 +219,6 @@ ul {
 .nav {
   grid-area: nav;
   padding: 2%;
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
   margin-bottom: 0;
@@ -233,8 +254,6 @@ ul {
 }
 
 .videosCables {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .videosCables iframe {

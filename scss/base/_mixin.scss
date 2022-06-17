@@ -1,0 +1,5 @@
+@mixin CaracteristicasHeaders ($direccionHeaderPags, $contenidoHeaderPags, $tamanoFuenteHeaderPags) {
+    flex-direction: $direccionHeaderPags;
+    justify-content: $contenidoHeaderPags;
+    font-size: $tamanoFuenteHeaderPags;
+}

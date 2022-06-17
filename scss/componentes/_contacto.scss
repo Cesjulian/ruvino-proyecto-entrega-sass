@@ -38,13 +38,10 @@ ul {
 
         .headerPaginas {
             font-family: $estilo-h1;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            font-size: 30px;
-            text-align: center;
-            color: rgb(0, 0, 0);
+            @extend %displayrepetido;
+            @include CaracteristicasHeaders ($direccionHeaderPags, $contenidoHeaderPags, $tamanoFuenteHeaderPags);
+            text-align: map-get($mapalaempresa, texto-centrado);
+            color: map-get($mapalaempresa, color-header);
         }
     }
 }
@@ -52,13 +49,12 @@ ul {
 .nav {
     grid-area: nav;
     padding: 2%;
-    display: flex;
-    align-items: center;
+    @extend %displayrepetido;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-bottom: 0;
     list-style: none;
-    background-color: rgba(101, 231, 231, 0.555);
+    background-color: map-get($mapalaempresa, color-nav);
 
     li {
         display: list-item;
@@ -70,7 +66,8 @@ ul {
             padding: 0.5rem 1rem;
             color: #0d6efd;
             text-decoration: none;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.2);
                 transition: all 0.5s;
             }
@@ -82,7 +79,7 @@ ul {
     grid-area: parrafo;
     padding: 3%;
     font-size: 25px;
-    text-align: center;
+    text-align: map-get($mapalaempresa, texto-centrado);
 
     p {
         font-family: $estilo-textos;
@@ -92,8 +89,7 @@ ul {
 }
 
 .videosCables {
-    display: flex;
-    align-items: center;
+    @extend %displayrepetido;
     justify-content: center;
 
     iframe {
@@ -107,7 +103,7 @@ ul {
 .footer {
     grid-area: footer;
     font-size: 20px;
-    background-color: rgb(231, 59, 59);
+    background-color: map-get($mapalaempresa, color-footer);
     display: flex;
 
     footer {
@@ -115,7 +111,7 @@ ul {
 
         .divsDelFooter {
             margin: 1% 2%;
-            text-align: left;
+            text-align: map-get($mapalaempresa, texto-izquierda);
             display: block;
 
             p {
